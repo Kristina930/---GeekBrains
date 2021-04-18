@@ -1,2 +1,2 @@
-# JavaScript2
+# HTML/Css/Less
 Проект "Интернет-магазина" от GeekBrains
