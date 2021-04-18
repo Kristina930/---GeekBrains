@@ -1,2 +1,2 @@
-# HTML/Css/Less
+# HTML/CSS/LESS
 Проект "Интернет-магазина" от GeekBrains
