@@ -1,0 +1,418 @@
+.header {
+    height: 100px;
+}
+.header-wrap {
+      display: flex;
+      justify-content: space-between;
+}
+/*логотип*/
+.logo {
+      display: flex;
+      align-items: center;
+}
+.brand_h1 {
+      font-family: @font-family;
+      font-size: @p-font-size + 12;
+      font-weight: 300;
+      letter-spacing: 0.025em;
+      margin-top: 45px;
+      padding-left: 15px;
+}
+.d {
+      margin-top: 38px;
+      font-weight: 900;
+      color: @pink-color;
+}
+/*поле ввода в меню*/
+.search {
+      display: flex;
+      flex-grow: 1;
+      margin-top: 40px;
+      margin-left: 30px;
+}
+.callback {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 32px;
+}
+.search-field {
+      padding: 10px;
+      width: 317px;
+      height: 38px;
+      background-color: @white-color;
+      border: @br-border;
+      border-radius: 0px 3px 3px 0px;
+      cursor: @cursor;
+      transition-duration: 200ms;
+}
+.search-field:hover{
+    border: 2px solid #838383;
+}
+.search-browse {
+      width: 87px;
+      height: 38px;
+      background-color: #cdcdcc;
+      background-image: linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%);
+      border: @br-border;
+      border-radius: 3px 0px 0px 3px;
+      text-align: center;
+      cursor: @cursor;
+      transition-duration: 200ms;
+      position: relative;
+}
+.search-browse:hover{
+    border: 3px solid #cdcdcc;
+}
+/*меню кнопки browse*/
+.drop{
+    width: 262px;
+    background-color: @white-color;
+    border-radius: 5px;
+    padding: 17px;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    text-align: left;
+    transition: 1s;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    z-index: 1;
+    
+}
+.drop a{
+    text-decoration: none;
+}
+.drop_h4:hover{
+    color: @pink-color;
+}
+.range-drop{
+    width: 235px;
+    height: 1px;
+    background-color: #e8e8e8;
+    margin-top: -20px;
+}
+.search-browse:hover .drop{
+    opacity: 1;
+    transform: scaleY(1);
+}
+.drop_h4{
+    font-family: @font-family;
+    font-size: @font-size;
+    line-height: 32px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #232323;
+    margin-top: -10px;
+}
+.drop_list{
+    list-style-type: none;
+    padding-left: 0;
+}
+.drop_list_link{
+    font-family: @font-family;
+    font-size: @font-size;
+    line-height: 28px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #4f4f4f;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.drop_list_link:hover{
+    color: @pink-color;
+}
+/*кнопка browse*/
+.browse:hover{
+    color: #cdcdcc;
+}
+.browse {
+    font-family: @font-family;
+    font-size: @font-size;
+    line-height: 32px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: @serebro-grey-color;
+}
+.browse .fa-caret-down {
+    font-size: @font-size;
+    margin-left: 8px;
+}
+
+.search-btn {
+    width: 40px;
+    height: 38px;
+    background-color: @white-color;
+    border: @br-border;
+    border-radius: 0px 3px 3px 0px;
+    color: @serebro-grey-color;
+    text-decoration: none;
+    cursor: @cursor;
+}
+.search-btn:hover{
+    color: @serebro-grey-color;
+    background-color:  #cdcdcc;   
+}
+/*кнопка account*/
+.account {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.cart{
+    position: absolute;
+    width: 262px;
+    height: 440px;
+    background-color: @white-color;
+    border-radius: 5px;
+    left: 0;
+    top: 100px;
+    transition: 1s;
+    transform: scaleY(0);
+    transform-origin: top;
+    opacity:0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.account:hover .cart{
+     transform: scaleY(1);
+     opacity:1;
+}
+.cart_img{
+    padding: 20px;     
+}
+       
+.cart_text{
+    margin-top: -115px;
+    margin-left: 105px;
+}
+.cart_h4{
+    font-family: @font-family;
+    font-size: @font-size - 2;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: @black-color;
+}
+.cart_icon{
+    margin-top: -10px;
+    font-size: @font-size - 2;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: @yellow-color;
+}
+
+.cart_p{
+    font-family: @font-family;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: @pink-color;
+    font-size: @font-size - 2;
+}
+.cart-filter{
+    width: 229px;
+    height: 1px;
+    background-color: rgba(237,237,237,0.74);
+    margin-top: 50px;
+    margin-left: 20px;
+}
+.img_account {
+    margin-right: 25px;
+    margin-top: 25px;
+    cursor: @cursor;
+}
+
+.p_account {
+    font-family: @font-family;
+    font-size: @p-font-size;
+    letter-spacing: 0.025em;
+    text-align: center;
+    border: @br-border;
+    color: @white-color;
+    margin-top: 30px;
+    background-color: @pink-color;
+    width: 130px;
+    height: 38px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    padding: 8px;
+    cursor: @cursor;
+    transition-duration: 200ms;
+}
+.p_account:hover{
+    color: @pink-color;
+    background-color: @white-color;
+}
+/*кнопка удалить*/
+.cart_button{
+    margin-top: -55px;
+    margin-left: 110px;
+}
+.cart_btn{
+    background-color: @white-color;
+    border: @white-color;
+}
+.cart_btn::after{
+    content: "\f057";
+    font-family: "Font Awesome 5 Free";
+    font-size: @p-font-size + 1;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #c0c0c0;
+    cursor: @cursor;
+}
+
+/*меню 2*/
+.nav {
+    height: 51px;
+    margin-top: 30px;
+}
+.main-nav {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav-item {
+    margin-right: 35px;
+}
+.nav-link {
+    text-decoration: none;
+    font-family: @font-family;
+    font-size: @font-size;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: @black-color;
+    transition: 0.5s;
+}
+.nav-link:hover{
+    color: @pink-color;
+}
+/*мега меню*/
+.main-drop{
+    width: 846px;
+    height: 310px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    transition: 1s;
+    z-index: 1;
+    transform: scaleY(0);
+    transform-origin: top;
+    opacity:0;
+}
+.drop-nav{
+   display: flex;
+   width: auto;
+}
+
+.drop-col{
+  width:260px; 
+  margin: 10px;
+}
+.drop_h4_col{
+    font-family: @font-family;
+    font-size: @font-size;
+    line-height: 32px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: #232323;
+    margin-top: -10px;
+}
+
+.main-nav li:hover .main-drop {
+  transform: scaleY(1);
+  opacity:1;
+}
+.main-nav li:last-child .drop-nav {
+  left: auto;
+}
+
+.drop_h4_women{
+    padding-top: 35px;
+}
+.drop_img{
+    margin-top: 20px;
+}
+.drop_img_text{
+    font-family: @font-family;
+    font-size: @font-size + 8;
+    line-height: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    color: @white-color;
+    margin-top: -65px;
+    margin-left: 174px; 
+}
+
+
+.cart_total{
+    font-family: @font-family;
+    font-size: @p-font-size + 1;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: @black-color;
+    padding-left: 20px;
+}
+.cart_price{
+    text-align: right;
+    margin-top: -40px;
+}
+.cart_btm_checkout{
+    width: 225px;
+    height: 50px;
+    border: @border-pink-color;
+    font-family: @font-family;
+    font-size: @font-size;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: @white-color;
+    margin-left: 20px;
+    margin-top: 10px;
+    cursor: @cursor;
+    padding: 15px 70px;   
+}
+.cart_btm_checkout:hover{
+   transform: scale(1.10);
+    
+}
+.checkout_a{
+    text-decoration: none;
+    color: @pink-color;
+}
+.cart_btm_go{
+    width: 225px;
+    height: 50px;
+    background-color: @white-color;
+    border: @border-input;
+    font-family: @font-family;
+    font-size: @font-size;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 20px;
+    margin-top: 20px;
+    cursor: @cursor;
+    padding: 15px 70px;
+}
+.cart_go{
+    text-decoration: none;
+    color: #4a4a4a;
+}
+.cart_btm_go:hover{
+    transform: scale(1.10);
+}
