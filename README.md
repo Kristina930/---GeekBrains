@@ -10,7 +10,7 @@ GB Store group training project on online store layout
 •	GIT
 •	Методология БЭМ
 •	W3C
-•	Photoshop,
+•	Photoshop
 •	Figma.
 
 Подготавливаем директорию для проекта:
