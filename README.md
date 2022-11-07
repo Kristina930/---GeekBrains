@@ -1,7 +1,9 @@
-# HTML/CSS/LESS
-Проект "Score" 
+Проект "Store" 
+
 Курсовой проект "Интернет-магазина"
+
 GB Store group training project on online store layout
+
 Базовая документация к проекту:
 •	HTML 5
 •	CSS 2.1 (LESS)
@@ -9,7 +11,7 @@ GB Store group training project on online store layout
 •	Методология БЭМ
 •	W3C
 •	Photoshop,
-•	 Figma.
+•	Figma.
 
 Подготавливаем директорию для проекта:
 
