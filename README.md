@@ -5,7 +5,7 @@
 GB Store group training project on online store layout
 
 Базовая документация к проекту:
-•	HTML 5
+ HTML
 •	CSS 2.1 (LESS)
 •	GIT
 •	Методология БЭМ
